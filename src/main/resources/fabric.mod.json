@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "remove-kelp",
+	"version": "${version}",
+	"name": "Remove Kelp",
+	"description": "Kelp is no more.",
+	"authors": [
+		"herrobriam"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/remove-kelp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.herrobriam.removekelp.RemoveKelp"
+		],
+		"fabric-datagen": [
+			"net.herrobriam.removekelp.RemoveKelpDataGenerator"
+		]
+	},
+	"mixins": [
+		"remove-kelp.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": ">=1.19",
+		"java": ">=17",
+		"fabric": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
